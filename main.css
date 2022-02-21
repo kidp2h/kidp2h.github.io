@@ -1,0 +1,249 @@
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 120%;
+  background-image: url(../images/mesh.jpg);
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 20%;
+  color: white;
+}
+.nav__list-items {
+  display: flex;
+  flex-direction: row;
+}
+.nav__list-items li {
+  display: inline-block;
+  width: 100px;
+  padding: 20px;
+  min-width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  cursor: pointer;
+  font-size: 17px;
+}
+.nav__title {
+  font-size: 25px;
+  font-weight: bold;
+}
+.information__area {
+  width: 100%;
+  height: 50px;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.card__information {
+  width: 85%;
+  position: absolute;
+  top: -500px;
+  padding: 40px;
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.information__personal {
+  margin-left: 100px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
+.information__personal .title__info {
+  font-size: 17px;
+  align-self: center;
+}
+.information__personal .fullname,
+.about__area h1 {
+  font-weight: bold;
+  font-size: 45px;
+  text-transform: uppercase;
+}
+#type__dev {
+  font-size: 15px;
+  text-transform: uppercase;
+}
+#slogan {
+  width: 100%;
+  margin-top: 30px;
+  color: #777777;
+  font-size: 15px;
+}
+.list--info {
+  margin-top: 70px;
+  color: #777777;
+}
+.list--info li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+.list--info li i {
+  margin-right: 50px;
+  color: var(--primary);
+}
+.list--social {
+  display: flex;
+  flex-direction: row;
+}
+.social {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: var(--primary);
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  cursor: pointer;
+}
+.about__area {
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  flex-direction: column;
+  margin-top: 200px;
+}
+.about__area .wrap {
+  width: 85%;
+  display: flex;
+}
+.about__area h1 {
+  color: #222;
+}
+.wrap .myself {
+  flex: 0.5;
+}
+.wrap .skill {
+  flex: 0.5;
+}
+.about__statistic {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-start;
+  margin-top: 50px;
+}
+.about__statistic div {
+  width: 132px;
+  height: 120px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid var(--primary);
+  border-radius: 5px;
+  padding: 10px;
+}
+.about__statistic div i {
+  margin-bottom: 10px;
+  color: var(--primary);
+}
+.about__statistic div span {
+  color: #777777;
+  font-size: 14px;
+}
+.about__statistic div h3 {
+  font-weight: 500;
+  color: #222;
+  font-size: 25px;
+}
+.about__statistic div:first-child {
+  margin-left: 0px;
+}
+.skill h1 {
+  visibility: hidden;
+}
+.skill-bar h4 {
+  margin-bottom: 15px;
+}
+.skill-bar {
+  margin-bottom: 15px;
+}
+.progress-bar {
+  width: 100%;
+  height: 20px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.progress-skill {
+  background-image: url("./images/mesh.jpg");
+  background-position: right center;
+  height: 10px;
+  border-radius: 10px;
+}
+#php {
+  width: 30%;
+}
+#autoit {
+  width: 30%;
+}
+#nodejs {
+  width: 30%;
+}
+#react {
+  width: 30%;
+}
+.project__area {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  flex-direction: column;
+}
+.project__area h1 {
+  font-size: 45px;
+  color: #222;
+}
+.category__project ul {
+  display: flex;
+}
+.category__project ul li {
+  padding: 0px 30px;
+  color: gray;
+  font-size: 15px;
+  cursor: pointer;
+}
+.category__project ul li:hover {
+  color: var(--primary);
+  transition: 0.5s;
+}
+.card__project {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 1000px;
+}
+
+.project {
+  padding: 0 30px;
+  width: 200px;
+  height: 200px;
+  margin: 10px 20px;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+}
