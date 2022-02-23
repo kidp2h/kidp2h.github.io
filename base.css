@@ -65,3 +65,10 @@ i {
   /* ADMIN */
   --primary: #8cc9fc;
 }
+a {
+  color: white;
+  text-decoration: none;
+}
+input[type="radio"] {
+  /* display: none; */
+}

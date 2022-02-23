@@ -18,8 +18,24 @@
         <span class="nav__title">KIDP2H</span>
         <ul class="nav__list-items">
           <li class="nav__item">Home</li>
-          <li class="nav__item">About</li>
-          <li class="nav__item">Contact</li>
+          <li
+            class="nav__item"
+            onclick='document.querySelector(".myself h1").scrollIntoView({behavior: "smooth", block: "start", inline: "center"});'
+          >
+            About
+          </li>
+          <li
+            class="nav__item"
+            onclick='document.querySelector("footer").scrollIntoView({behavior: "smooth", block: "start", inline: "center"});'
+          >
+            Contact
+          </li>
+          <li
+            class="nav__item"
+            onclick='document.querySelector(".project__area h1").scrollIntoView({behavior: "smooth", block: "start", inline: "center"});'
+          >
+            Project
+          </li>
         </ul>
       </nav>
     </header>
@@ -37,9 +53,10 @@
           <h1 class="fullname">Nguyen Phuc Thinh</h1>
           <span id="type__dev"><b>Backend Developer</b></span>
           <span id="slogan">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur
-            voluptates asperiores dolores qui corporis similique ullam, saepe ab
-            fugit dolore.
+            Welcome to my world !! My fullname is Nguyen Phuc Thinh and I'm a
+            sophomore studying Software Engineer at SGU (Sai Gon University).
+            I'm twenty years old and from Vietnam. My goal is to become a
+            full-stack developer
           </span>
           <ul class="list--info">
             <li><i class="ion-ios-calendar-outline"></i>26th April, 2002</li>
@@ -68,10 +85,9 @@
         <div class="myself">
           <h1>ABOUT MYSELF</h1>
           <span
-            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
-            dolores, repellendus facilis, velit delectus temporibus maxime
-            itaque neque inventore non nesciunt corporis id architecto
-            voluptates eius voluptatum sint debitis recusandae!
+            >I'm an easygoing, sociable, quiet person who likes to work with
+            computers, especially coding, so I follow the path of a programmer,
+            although it seems difficult but it's my passion, I It's fun to code
           </span>
           <section class="about__statistic">
             <div id="total-language">
@@ -113,7 +129,7 @@
               </div>
             </div>
             <div class="skill-bar">
-              <h4>Game</h4>
+              <h4>NodeJS</h4>
               <div class="progress-bar">
                 <div class="progress-skill" id="nodejs"></div>
               </div>
@@ -122,35 +138,324 @@
         </div>
       </div>
     </section>
+    <section class="timeline__area">
+      <ul class="timeline__tabs">
+        <li class="tab active">My Experience</li>
+        <li class="tab">My Education</li>
+      </ul>
+      <div class="tab__content">
+        <div class="education">
+          <ul class="list">
+            <li>
+              <span></span>
+              <div class="content">
+                <div class="left">
+                  <p>August 2014 to May 2017</p>
+                </div>
+                <div class="right">
+                  <h3>Junior High School</h3>
+                  <br />
+                  <p>Graduated Junior High School</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <span></span>
+              <div class="content">
+                <div class="left">
+                  <p>August 2017 to June 2020</p>
+                </div>
+                <div class="right">
+                  <h3>High School</h3>
+                  <br />
+                  <p>Graduated From High School</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <span></span>
+              <div class="content">
+                <div class="left">
+                  <p>August 2020 to present</p>
+                </div>
+                <div class="right">
+                  <h3>University</h3>
+                  <br />
+                  <p>Currently a 2nd year student</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="experience active">
+          <ul class="list">
+            <li>
+              <span></span>
+              <div class="content">
+                <div class="left">
+                  <p>September 2018</p>
+                </div>
+
+                <div class="right">
+                  <h3>Introduction to programming</h3>
+                  <br />
+                  <p>The first language is AutoIT, C++</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <span></span>
+              <div class="content">
+                <div class="left">
+                  <p>May 2019</p>
+                </div>
+                <div class="right">
+                  <h3>Website Programming</h3>
+                  <br />
+                  <p>Backend Developer. Start with PHP</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <span></span>
+              <div class="content">
+                <div class="left">
+                  <p>September 2019</p>
+                </div>
+                <div class="right">
+                  <h3>Automation</h3>
+                  <br />
+                  <p>Auto Facebook with AutoIT, C#</p>
+                  <p>Interact between WFA and WA</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <span></span>
+              <div class="content">
+                <div class="left">
+                  <p>November 2020</p>
+                </div>
+                <div class="right">
+                  <h3>Hacking</h3>
+                  <br />
+                  <p>Hacked popular game: AmongUs</p>
+                  <p>(AmongUs best trending in mid-2020)</p>
+                  <p>Know technical hacking by inject dll</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <span></span>
+              <div class="content">
+                <div class="left">
+                  <p>December 2020 to present</p>
+                </div>
+                <div class="right">
+                  <h3>Hacking</h3>
+                  <br />
+                  <p>Focus into website developer</p>
+                  <p>Learn Frontend to become Fullstack</p>
+                  <p>Researching ReactJS</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
     <section class="project__area">
       <h1>Featured Projects</h1>
       <div class="category__project">
         <ul>
-          <li>All</li>
-          <li>Website</li>
-          <li>Tools</li>
-          <li>Hacking</li>
-          <li>Other</li>
+          <li class="type__project active" data-filter="all">All</li>
+          <li class="type__project" data-filter="website">Website</li>
+          <li class="type__project" data-filter="tools">Tools</li>
+          <li class="type__project" data-filter="hacking">Hacking</li>
+          <li class="type__project" data-filter="other">Other</li>
         </ul>
       </div>
       <div class="card__project">
-        <div class="project"></div>
-        <div class="project"></div>
-        <div class="project"></div>
-        <div class="project"></div>
-        <div class="project"></div>
-        <div class="project"></div>
-        <div class="project"></div>
-        <div class="project"></div>
+        <div class="project website" data-filter="website">
+          <div class="slide">
+            <button>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/kidp2h/shop2h"
+                >Source code</a
+              >
+            </button>
+          </div>
+          <img src="./images/project/shop2h.jpg" alt="" />
+          <div class="info-project">
+            <h3>Shop2h E-Commerce</h3>
+            <span>Aug 21, 2021</span>
+            <p>
+              Website Application code with NodeJS and framework is ExpressJS
+              with Typescript
+            </p>
+          </div>
+          <span class="label__type">WEBSITE</span>
+        </div>
+        <div class="project hacking" data-filter="hacking">
+          <div class="slide">
+            <button>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/kidp2h/aimbot-assaultcube"
+                >Source code</a
+              >
+            </button>
+          </div>
+          <img src="./images/project/amongus.jpg" alt="" />
+          <div class="info-project">
+            <h3>Hack AmongUs</h3>
+            <span>Sep 27, 2020</span>
+            <p>
+              Hack no cooldown to kill another player in the match. It was coded
+              by AutoIT
+            </p>
+          </div>
+          <span class="label__type">hacking</span>
+        </div>
+        <div class="project hacking" data-filter="hacking">
+          <div class="slide">
+            <button>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/kidp2h/aimbot-assaultcube"
+                >Source code</a
+              >
+            </button>
+          </div>
+          <img src="./images/project/ac.webp" alt="" />
+          <div class="info-project">
+            <h3>Hacking Aimbot AC</h3>
+            <span>Apr 21, 2021</span>
+            <p>
+              Hack aim-bot, teleport, god-mode, infinity ammo easy attack
+              someone in the match
+            </p>
+          </div>
+          <span class="label__type">Hacking</span>
+        </div>
+        <div class="project other" data-filter="other">
+          <div class="slide">
+            <button>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/kidp2h/botdiscord-taixiu"
+                >Source code</a
+              >
+            </button>
+          </div>
+          <img src="./images/project/discord.jpg" alt="" />
+          <div class="info-project">
+            <h3>Bot Discord</h3>
+            <span>Jun 18, 2021</span>
+            <p>
+              Bot Game Discord, simulator game TaiXiu, it was coded by NodeJS
+              with libraries discord.js
+            </p>
+          </div>
+          <span class="label__type">Other</span>
+        </div>
+        <div class="project other" data-filter="other">
+          <div class="slide">
+            <button>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/kidp2h/CafeManagementApplication"
+                >Source code</a
+              >
+            </button>
+          </div>
+          <img src="./images/project/cafe.jpg" alt="" />
+          <div class="info-project">
+            <h3>Cafe Management</h3>
+            <span>Dec 20, 2021</span>
+            <p>
+              Winform Application, Cafe Management useful with coffe shop, code
+              with C#
+            </p>
+          </div>
+          <span class="label__type">Website</span>
+        </div>
+        <div class="project website" data-filter="website">
+          <div class="slide">
+            <button>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/kidp2h/appchat"
+                >Source code</a
+              >
+            </button>
+          </div>
+          <img src="./images/project/chat_realtime.jpg" alt="" />
+          <div class="info-project">
+            <h3>Chat & Call Video</h3>
+            <span>Dec 8, 2020</span>
+            <p>
+              Website Application, this app code NodeJS and libraries SocketIO
+              and PeerJS
+            </p>
+          </div>
+          <span class="label__type">WEBSITE</span>
+        </div>
+        <div class="project tools" data-filter="tools">
+          <div class="slide">
+            <button>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/kidp2h/SoundCloud"
+                >Source code</a
+              >
+            </button>
+          </div>
+          <img src="./images/project/soundcloud.png" alt="" />
+          <div class="info-project">
+            <h3>Get MP3 SoundCloud</h3>
+            <span>Nov 18, 2021</span>
+            <p>
+              This app can help user get link mp3 quality free in SoundCloud,
+              code with AutoIT
+            </p>
+          </div>
+          <span class="label__type">Tools</span>
+        </div>
       </div>
     </section>
-    <div>23</div>
-    <div>23</div>
-    <div>23</div>
-    <div>23</div>
-    <div>23</div>
-    <div>23</div>
-    <div>23</div>
-    <div>23</div>
+    <footer>
+      <div class="footer__about-me">
+        <h3>SLOGAN</h3>
+        <span>No pain no gain !!!!</span>
+        <span>The more effort you put into improving your skills</span>
+      </div>
+      <div class="footer__contact">
+        <h3>Contact</h3>
+        <span>Are you want to contact me ?</span>
+        <div class="input-group">
+          <input type="text" placeholder="Email Address" />
+          <button><i class="ion-ios-paperplane-outline"></i></button>
+        </div>
+      </div>
+      <div class="footer__follow-me">
+        <h3>Follow me</h3>
+        <span>Let follow me on socials</span>
+        <div class="footer__social">
+          <i class="ion-social-facebook-outline"></i>
+          <i class="ion-social-github-outline"></i>
+          <i class="ion-social-twitter-outline"></i>
+        </div>
+      </div>
+    </footer>
   </body>
+  <script src="./main.js"></script>
 </html>
