@@ -51,7 +51,6 @@ button,
 [type="submit"] {
   -webkit-appearance: button;
 }
-
 [hidden] {
   display: none;
 }
